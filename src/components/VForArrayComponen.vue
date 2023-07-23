@@ -65,8 +65,8 @@ const items = [
 </script>
 
 <template>
-    <ul v-for="item in items" :key="item.id">
-        <li>{{ item.title }}</li>
+    <ul>
+        <li v-for="item in items" :key="item.id">{{ item.id }}={{item.title }} : {{ item.description }}</li>
     </ul>
 </template>
 
